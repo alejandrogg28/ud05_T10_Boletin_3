@@ -24,7 +24,7 @@ $hora=isset($_REQUEST["hora"]) ? $_REQUEST ["hora"] : "";
 
 if ($dia=="" || $hora=="") {
     echo "<p>Tes que escoller un día e a hora.</p>";
-}elseif ($dia<5 && $dia>=0 && $hora!="") {
+}elseif ($dia < 5 && $dia >= 0 && $hora != "") {
     echo "<p>A hora escollida é $hora.</p>";
     echo "<p>O día escollido é $dia.</p>";
     $horarioDaHoraEscollida = $horario[$hora];
