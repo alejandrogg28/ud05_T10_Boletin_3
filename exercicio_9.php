@@ -7,9 +7,9 @@ header('Content-Type: text/html; charset=UTF-8');
 //$b=htmlspecialchars(trim(strip_tags($_REQUEST['b'])), ENT_QUOTES, "ISO-8859-1");
 //$c=htmlspecialchars(trim(strip_tags($_REQUEST['c'])), ENT_QUOTES, "ISO-8859-1");
 
-$a = $_POST['a'];
-$b = $_POST['b'];
-$c = $_POST['c'];
+$a = (isset($_POST['a']));
+$b = (isset($_POST['b']));
+$c = (isset($_POST['c']));
 
 $neg = -1;
 
