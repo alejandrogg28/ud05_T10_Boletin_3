@@ -20,8 +20,8 @@ $resta = $oper1 - $oper2;
 $raiz =  sqrt ( $resta);
 $dos_a = 2 * $a;
 
-$resultado1 = ($menosb + $raiz) / $dos_a;
-$resultado2 = ($menosb - $raiz) / $dos_a;
+$resultado1 = (($menosb + $raiz) / $dos_a);
+$resultado2 = (($menosb - $raiz) / $dos_a);
 
 echo "el valor de x1 es: ".$resultado1." <br />";
 echo "el valor de x2 es: ".$resultado2." <br />";
