@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 Boletín 3</title>
+</head>
+<body>
+<!--Realiza un minicuestionario con 10 preguntas tipo test sobre las asignaturas que se imparten en
+el curso. Cada pregunta acertada sumará un punto. El programa mostrará al final la calificación
+obtenida. Pásale el minicuestionario a tus compañeros y pídeles que lo hagan para ver qué tal andan
+de conocimientos en las diferentes asignaturas del curso.-->
+
+<form action="exercicio_12.php" method="post">
+    <ol>
+      <li>
+        En qué asignatura se imparte php<br>
+        <input type="radio" name="respuesta1" value="0">a) ASO<br>
+        <input type="radio" name="respuesta1" value="1">b) IAW<br>
+        <input type="radio" name="respuesta1" value="0">c) SAD<br>
+      </li>
+      <br>
+      <li>
+        Cuál es el comando para iniciar sesión en mysql<br>
+        <input type="radio" name="respuesta2" value="0">a) mysql -r usuario -p<br>
+        <input type="radio" name="respuesta2" value="0">b) mysql -u usuario -c<br>
+        <input type="radio" name="respuesta2" value="1">c) mysql -u usuario -p<br>
+      </li>
+      <br>
+      <li>
+        Con el protocolo DHCP podemos asignar direcciones IP de manera<br>
+        <input type="radio" name="respuesta3" value="1">a) Dinámica<br>
+        <input type="radio" name="respuesta3" value="0">b) Estática<br>
+        <input type="radio" name="respuesta3" value="0">c) Ninguna de las anteriores<br>
+      </li>     
+    </ol>
+    
+    <input type="submit" value="Resultado del test">
+  </form>
+
+</body>
+</html>
