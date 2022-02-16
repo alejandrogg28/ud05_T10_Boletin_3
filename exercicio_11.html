@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 Boletín 3</title>
+</head>
+<body>
+    <!--Escribe un programa que dada una hora determinada (horas y minutos), calcule los segundos que
+faltan para llegar a la medianoche-->
+
+        <form action="exercicio_11.php" method="post">
+            <p>Introduce la Hora: <input type="number" name="hora" value=''<?php if(isset($_POST['hora'])){ $_POST['hora']; }''?//></p>
+            <p>Introduce los minutos: <input type="number" name="minuto" value=''<?php if(isset($_POST['minuto'])){ $_POST['minuto']; }''?//></p>
+            
+            <p><input type="submit" name="Enviar"/></p>
+        </form>
+
+</body>
+</html>
