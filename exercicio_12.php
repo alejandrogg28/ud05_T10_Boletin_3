@@ -6,7 +6,13 @@ obtenida. Pásale el minicuestionario a tus compañeros y pídeles que lo hagan 
 de conocimientos en las diferentes asignaturas del curso.
 */
 
-$puntos = $_POST['respuesta1'] + $_POST['respuesta2'] + $_POST['respuesta3'];
-echo "Calificación final: $puntos puntos.";
+if(!isset($_POST['respuesta1']) && !isset($_POST['respuesta2']) && !isset($_POST['respuesta3']))
+    echo "<p>Tienes que contestar todas las preguntas del cuestionario</p>";
+
+else{
+    $puntos = $_POST['respuesta1'] + $_POST['respuesta2'] + $_POST['respuesta3'];
+    echo "Calificación final: $puntos puntos.";
+}
+
 
 ?>

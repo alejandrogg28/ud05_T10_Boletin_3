@@ -11,9 +11,11 @@ $minuto=$_POST['minuto'];
 if(!isset($hora) || !isset($minuto))
 echo "<p>Tes que introducir a hora e os minutos</p>";
 
+else{
 $segundos = (($hora * 3600) + ($minuto * 60));
 $segundos_medianoche = ((24 * 3600) - $segundos);
 
-echo "Quedan $segundos_medianoche segundos hasta la medianoche";
 
+echo "Quedan $segundos_medianoche segundos hasta la medianoche";
+}
 ?>
